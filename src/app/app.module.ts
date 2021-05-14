@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { TimelineComponent } from './timeline/timeline.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+import { MatTable, MatHeaderRowDef } from '@angular/material/table';
 @NgModule({
   declarations: [
     AppComponent,
@@ -12,7 +13,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   ],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatTable, MatHeaderRowDef
   ],
   providers: [],
   bootstrap: [AppComponent]
